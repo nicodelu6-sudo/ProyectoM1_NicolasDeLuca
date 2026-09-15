@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoM1_NicolasDeLuca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Generador de paletas de colores</h1>
+        <p>Genera una peleta de colores aleatorios.</p>
+    </header>
+
+    <main>
+        <section>
+            
+            <h2>Configuración de la paleta</h2>
+            
+            <label for="palette-size">
+                Cantidad de colores:
+            </label>
+
+            <select id="palette-size">
+                <option value="6">6 colores</option>
+                <option value="8">8 colores</option>
+                <option value="9">9 colores</option>
+            </select>
+
+            <button id="generate-button" type="button">
+                Generar paleta
+            </button>
+
+        </section>
+
+        <section>
+            
+            <h2>Paleta generada</h2>
+            
+            <div id="palette-container">
+                <!-- Aquí se generarán los colores -->
+            </div>  
+
+            <p id="feedback" aria-live="polite"></p>
+        
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>Proyecto de Nicolas De Luca</p>
+    </footer>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
