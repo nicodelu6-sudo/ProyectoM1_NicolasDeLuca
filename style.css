@@ -1,0 +1,116 @@
+/*ESTILOS GENERALES*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    min-height: 100vh;
+}
+
+/*ENCABEZADO*/
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+/*SECCION PRINCIPAL*/
+
+main {
+    padding: 30px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*CONFIGURACION DE PALETAS*/
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/*Selector 6 / 8 / 9 colores*/
+
+#palette-size {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*BOTON GENERAR PALETA*/
+
+#generate-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Cuando pase el mouse por encima del boton*/
+
+#generate-button:hover {
+    background-color: #314b31;
+}
+
+/*PALETA DE COLORES*/
+
+#palette-container {
+    display: flex;     /*flexbox para organizar los colores en fila*/
+    justify-content: center;
+    flex-wrap: wrap;    /*permite que los colores se ajusten si no entran bien*/
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/*js genera un div por cada color, y le asigna la clase color-card*/
+
+.color-card {
+    flex: 1;
+    min-width: 120px; 
+    padding: 40px 15px; 
+    border-radius: 8px; 
+    text-align: center;
+    font-weight: bold;
+}
+
+/*feedback de los colores copiados*/
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/*footer*/
+
+footer {
+  text-align: left;
+  padding: 20px;
+  color: #666666;
+  margin-top: 80px;
+}
