@@ -25,8 +25,8 @@ El objetivo del proyecto fue aplicar los conocimientos básicos de **HTML, CSS y
 - [Generación de colores en HSL](#generación-de-colores-en-hsl)
 - [Conversión de HSL a HEX](#conversión-de-hsl-a-hex)
 - [Uso de span para mejorar la visibilidad](#uso-de-span-para-mejorar-la-visibilidad)
-- [Flujo de la aplicación](./documentacion/flujo-app.md)
-- [Uso de IA](./documentacion/uso-ia.md)
+- [Flujo de la aplicación](./Documentacion/flujo-app.md)
+- [Uso de IA](./Documentacion/uso-ia.md)
 
 ---
 
