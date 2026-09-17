@@ -8,14 +8,22 @@ body {
     font-family: verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
     min-height: 100vh;
+
+    background: radial-gradient(
+        circle at top,
+        #1d2148 0%,
+        #151936 45%,
+        #090c18 100%
+    );
+
+    color: white;
 }
 
 /*ENCABEZADO*/
 
 header {
-    background-color: #1a1a1a;
+    background-color: transparent;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -81,9 +89,9 @@ label {
 /*PALETA DE COLORES*/
 
 #palette-container {
-    display: flex;     /*flexbox para organizar los colores en fila*/
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
     justify-content: center;
-    flex-wrap: wrap;    /*permite que los colores se ajusten si no entran bien*/
     gap: 15px;
     margin-top: 20px;
 }
@@ -91,12 +99,18 @@ label {
 /*js genera un div por cada color, y le asigna la clase color-card*/
 
 .color-card {
-    flex: 1;
-    min-width: 120px; 
-    padding: 40px 15px; 
-    border-radius: 8px; 
-    text-align: center;
+    height: 100px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1;
     font-weight: bold;
+    text-align: left;
 }
 
 /*feedback de los colores copiados*/
@@ -109,8 +123,14 @@ label {
 /*footer*/
 
 footer {
-  text-align: left;
-  padding: 20px;
-  color: #666666;
-  margin-top: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
+    background-color: transparent;
 }
