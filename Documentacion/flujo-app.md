@@ -4,37 +4,27 @@ Este documento muestra de forma simple cómo funciona la aplicación para genera
 
 ---
 
-## 1. Pantalla inicial
-
-Al abrir la aplicación, el usuario ve el título principal, una breve descripción y la sección de configuración de la paleta.
-
-En esta parte todavía no se generaron colores. El usuario puede elegir cuántos colores quiere mostrar en la paleta.
-
-Captura de pantalla 2026-09-17 085822.png
-
----
-
-## 2. Selección de la cantidad de colores
+## 1. Selección de la cantidad de colores
 
 El usuario puede desplegar el selector de cantidad y elegir cuántos colores quiere generar.
 
 Las opciones disponibles en la aplicación son 6, 8 o 9 colores.
 
-Captura de pantalla 2026-09-17 085836.png
+![](./images/Captura%20de%20pantalla%202026-09-17%20085822%281%29.png)
 
 ---
 
-## 3. Selección del formato de color
+## 2. Selección del formato de color
 
 Después, el usuario puede elegir en qué formato quiere visualizar los códigos de color.
 
 La aplicación permite mostrar los colores en formato `HEX` o `HSL`.
 
-Captura de pantalla 2026-09-17 085848.png
+![](./images/Captura%20de%20pantalla%202026-09-17%20085836%281%29.png)
 
 ---
 
-## 4. Generación de la paleta
+## 3. Generación de la paleta
 
 Una vez elegida la cantidad de colores y el formato, el usuario presiona el botón **"Generar paleta"**.
 
@@ -44,7 +34,9 @@ Cada tarjeta muestra:
 - el color generado como fondo
 - el código correspondiente en el formato elegido
 
-Captura de pantalla 2026-09-17 085857.png
+![](./images/Captura%20de%20pantalla%202026-09-17%20085848%281%29.png)
+
+![](./images/Captura%20de%20pantalla%202026-09-17%20085857%281%29.png)
 
 ---
 
