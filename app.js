@@ -37,8 +37,8 @@ function generateRandomColor() {
 
     
     const hue = Math.floor(Math.random() * 360);
-    const saturation = Math.floor(Math.random() * 51) + 50;
-    const lightness = Math.floor(Math.random() * 51) + 25;
+    const saturation = Math.floor(Math.random() * 101);
+    const lightness = Math.floor(Math.random() * 101);
 
     const hsl = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 
@@ -73,11 +73,17 @@ function generatePalette() {
 
         colorCard.style.backgroundColor = color.hsl;
 
+        const colorCode = document.createElement("span");
+
+        colorCode.classList.add("color-code");
+
         if (colorFormat.value === "hex") {
-            colorCard.textContent = color.hex;
-        } else {
-            colorCard.textContent = color.hsl;
+            colorCode.textContent = color.hex;
+        } else {           
+            colorCode.textContent = color.hsl;
         }
+
+        colorCard.appendChild(colorCode);
 
         paletteContainer.appendChild(colorCard);
     }

@@ -113,6 +113,17 @@ label {
     text-align: left;
 }
 
+/*etiqueta que muestra el codigo de color, con fondo semitransparente*/
+
+.color-code {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 4px 7px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+
 /*feedback de los colores copiados*/
 
 #feedback {
