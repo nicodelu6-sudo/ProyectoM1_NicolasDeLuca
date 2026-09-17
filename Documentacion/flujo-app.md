@@ -10,7 +10,7 @@ El usuario puede desplegar el selector de cantidad y elegir cuántos colores qui
 
 Las opciones disponibles en la aplicación son 6, 8 o 9 colores.
 
-![](./images/Captura%20de%20pantalla%202026-09-17%20085822%281%29.png)
+![Selección de cantidad de colores](./images/Captura%20de%20pantalla%202026-09-17%20085822.png)
 
 ---
 
@@ -20,7 +20,7 @@ Después, el usuario puede elegir en qué formato quiere visualizar los códigos
 
 La aplicación permite mostrar los colores en formato `HEX` o `HSL`.
 
-![](./images/Captura%20de%20pantalla%202026-09-17%20085836%281%29.png)
+![Selección del formato de color](./images/Captura%20de%20pantalla%202026-09-17%20085836.png)
 
 ---
 
@@ -34,9 +34,9 @@ Cada tarjeta muestra:
 - el color generado como fondo
 - el código correspondiente en el formato elegido
 
-![](./images/Captura%20de%20pantalla%202026-09-17%20085848%281%29.png)
+![Generar paleta](./images/Captura%20de%20pantalla%202026-09-17%20085848.png)
 
-![](./images/Captura%20de%20pantalla%202026-09-17%20085857%281%29.png)
+![Paleta generada](./images/Captura%20de%20pantalla%202026-09-17%20085857.png)
 
 ---
 
@@ -53,3 +53,8 @@ El funcionamiento general de la app sigue estos pasos:
 7. La paleta se muestra en pantalla.
 
 ---
+
+
+
+
+
