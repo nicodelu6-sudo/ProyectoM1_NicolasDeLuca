@@ -6,6 +6,7 @@ const colorFormat = document.getElementById("color-format");
 const generateButton = document.getElementById("generate-button");
 const paletteContainer = document.getElementById("palette-container");
 const feedback = document.getElementById("feedback");
+let currentPalette = [];
 
 //Convertir HSL a HEX//
 
@@ -54,45 +55,71 @@ function generateRandomColor() {
     };
 }
 
-//Generar paleta de colores//
+function renderPalette() {
 
-function generatePalette() {
-
-    const amount = Number(paletteSize.value);
-
-    
     paletteContainer.innerHTML = "";
 
-    for (let i = 0; i < amount; i++) {
-
-        const color = generateRandomColor();
+    currentPalette.forEach((color) => {
 
         const colorCard = document.createElement("div");
 
         colorCard.classList.add("color-card");
-
         colorCard.style.backgroundColor = color.hsl;
 
         const colorCode = document.createElement("span");
 
         colorCode.classList.add("color-code");
 
+        let displayedCode;
+
         if (colorFormat.value === "hex") {
-            colorCode.textContent = color.hex;
-        } else {           
-            colorCode.textContent = color.hsl;
+            displayedCode = color.hex;
+        } else {
+            displayedCode = color.hsl;
         }
 
+        colorCode.textContent = displayedCode;
+
+        colorCard.addEventListener("click", () => {
+
+            navigator.clipboard.writeText(displayedCode);
+
+            feedback.textContent =
+            `${displayedCode} copiado al portapapeles`;
+
+        });
+
         colorCard.appendChild(colorCode);
-
         paletteContainer.appendChild(colorCard);
-    }
 
-    feedback.textContent =
-        `Paleta de ${amount} colores generada`;
+    });
 
 }
+
+function generatePalette() {
+
+    const amount = Number(paletteSize.value);
+
+    currentPalette = [];
+
+    for (let i = 0; i < amount; i++) {
+
+        const color = generateRandomColor();
+
+        currentPalette.push(color);
+
+    }
+
+    renderPalette();
+
+    feedback.textContent =
+    `Paleta de ${amount} colores generada`;
+
+}
+
 
 //BOTON//
 
 generateButton.addEventListener("click", generatePalette);
+
+colorFormat.addEventListener("change", renderPalette);
