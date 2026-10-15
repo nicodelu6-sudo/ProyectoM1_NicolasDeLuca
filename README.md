@@ -20,7 +20,7 @@ El objetivo del proyecto fue aplicar los conocimientos básicos de **HTML, CSS y
 
 - [Descripción](#-descripción)
 - [Tecnologías utilizadas](#-tecnologías-utilizadas)
-- [Funcionalidades principales](#-funcionalidades-principales)
+- [Funcionalidades principales](#funcionalidades-principales)
 - [Decisiones técnicas](#-decisiones-técnicas)
 - [Ejecución local](#ejecución-local)
 - [Despliegue](#despliegue)
@@ -45,7 +45,7 @@ Para desarrollar el proyecto utilicé:
 
 ---
 
-## ⚙️ Funcionalidades principales
+## Funcionalidades principales
 
 La aplicación permite:
 
@@ -99,7 +99,7 @@ En lugar de agregar una lógica más compleja para calcular si el texto debía s
 
 ---
 
-## ▶️ Ejecución local
+## Ejecución local
 
 1. Clonar el repositorio:
 
@@ -113,7 +113,7 @@ git clone https://github.com/nicodelu6-sudo/ProyectoM1_NicolasDeLuca.git
 
 ---
 
-## 🚀 Despliegue
+## Despliegue
 
 El proyecto está publicado mediante GitHub Pages.
 
@@ -127,7 +127,7 @@ Para realizar el despliegue:
 
 ---
 
-## 🔧 Mejoras realizadas
+## Mejoras realizadas
 
 Luego de la primera revisión del proyecto se realizaron las siguientes mejoras:
 
