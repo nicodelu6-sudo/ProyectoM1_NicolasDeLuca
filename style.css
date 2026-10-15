@@ -134,11 +134,7 @@ label {
 /*footer*/
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-
+   
     text-align: center;
     padding: 8px;
     color: #fff;

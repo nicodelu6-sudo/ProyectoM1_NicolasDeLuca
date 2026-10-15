@@ -53,6 +53,10 @@ La aplicación permite:
 - Mostrar cada color en formato HEX.
 - Generar una nueva paleta cuando el usuario lo desee.
 - Mantener visible el código del color incluso sobre colores claros.
+- Cambiar entre formato HEX y HSL conservando la misma paleta.
+- Copiar el código de un color al portapapeles haciendo click sobre su tarjeta.
+- Mostrar un mensaje de confirmación al copiar un color.
+- Adaptar la distribución de las tarjetas a diferentes tamaños de pantalla.
 
 ---
 
@@ -92,11 +96,52 @@ En lugar de agregar una lógica más compleja para calcular si el texto debía s
 
 ---
 
+## ▶️ Ejecución local
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/nicodelu6-sudo/ProyectoM1_NicolasDeLuca.git
+```
+
+2. Abrir la carpeta del proyecto en Visual Studio Code.
+
+3. Abrir el archivo `index.html` en el navegador o utilizar la extensión Live Server.
+
+---
+
+## 🚀 Despliegue
+
+El proyecto está publicado mediante GitHub Pages.
+
+Para realizar el despliegue:
+
+1. Ingresar a **Settings** del repositorio.
+2. Entrar en **Pages**.
+3. Seleccionar la rama `main`.
+4. Seleccionar `/ (root)` como carpeta.
+5. Guardar la configuración.
+
+---
+
+## 🔧 Mejoras realizadas
+
+Luego de la primera revisión del proyecto se realizaron las siguientes mejoras:
+
+- Se implementó el copiado de los códigos de color al portapapeles.
+- Se agregó un mensaje de feedback al copiar un color.
+- Se modificó la lógica para mantener la misma paleta al cambiar entre formato HEX y HSL.
+- Se corrigieron los enlaces internos de la documentación.
+- Se completaron los enlaces del footer.
+- Se mejoró el diseño responsive para adaptar la grilla a distintos tamaños de pantalla.
+
+---
+
 ## 🔄 Flujo de la aplicación
 
 La explicación del funcionamiento y del recorrido de la aplicación se encuentra en:
 
-[Ver flujo de la aplicación](./documentacion/flujo-app.md)
+[Ver flujo de la aplicación](./Documentacion/flujo-app.md)
 
 ---
 
@@ -106,4 +151,6 @@ Durante el desarrollo utilicé herramientas de Inteligencia Artificial como apoy
 
 La documentación de las consultas realizadas se encuentra en:
 
-[Ver documentación de uso de IA](./documentacion/uso-ia.md)
+[Ver documentación de uso de IA](./Documentacion/uso-ia.md)
+
+---

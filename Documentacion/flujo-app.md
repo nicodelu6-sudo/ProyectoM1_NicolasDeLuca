@@ -42,15 +42,14 @@ Cada tarjeta muestra:
 
 ## Resumen del flujo
 
-El funcionamiento general de la app sigue estos pasos:
-
-1. El usuario abre la aplicación.
-2. Selecciona la cantidad de colores.
-3. Selecciona el formato de color (`HEX` o `HSL`).
-4. Presiona el botón **"Generar paleta"**.
-5. JavaScript genera los colores aleatorios.
-6. Se crean las tarjetas con sus respectivos códigos.
-7. La paleta se muestra en pantalla.
+1. El usuario selecciona la cantidad de colores.
+2. El usuario selecciona el formato de color (`HEX` o `HSL`).
+3. Al presionar **Generar paleta**, JavaScript genera los colores aleatorios.
+4. Los colores generados se guardan en la paleta actual.
+5. JavaScript crea y muestra las tarjetas con sus respectivos códigos.
+6. Si el usuario cambia entre HEX y HSL, se vuelve a mostrar la misma paleta en el nuevo formato sin generar colores nuevos.
+7. Al hacer click sobre una tarjeta, el código del color se copia al portapapeles.
+8. La aplicación muestra un mensaje confirmando que el color fue copiado.
 
 ---
 
